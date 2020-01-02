@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>트위터, 지금 일어나고 있는 일입니다.</title>
+        <script src="https://kit.fontawesome.com/397f20b135.js" crossorigin="anonymous"></script>
+        <style>
+            html, body, .main {
+                margin: 0px; padding: 0px;
+                height: 100%;
+                overflow: hidden; 
+                text-decoration:none ;
+                
+            }
+ 
+            * {
+                position: relative;
+            }
+ 
+            .main > div {
+                height: 100%;
+                width : 50%;
+                float: left;
+            }
+
+            .left {
+                background-color: #1DA1F2;
+                color : white;
+                font-weight: bold;
+                font-size: 18px; 
+                position: relative;
+                z-index:1;
+            }
+ 
+            .img-background {
+                z-index:2;
+                top:-700px;
+                right:-850px;
+                position:absolute;
+                
+            }
+ 
+            .left > .wrapper {
+                margin: 0 auto;
+                width : 436px;
+                z-index:3;
+                position: relative; 
+                top:200px;
+                
+            }
+ 
+            .left > .wrapper > div {
+                margin: 48px 0;
+                z-index:3;
+            }
+ 
+ 
+            .right {
+                z-index: 10;
+                position:relative;
+                background-color: white;
+            }
+ 
+            .right > .form {
+                margin: 0 auto;
+                width : 524px;
+                height : 78px;
+                overflow: hidden;
+                top: 30px;
+            }
+ 
+            .right > .form > div {
+                float : left;
+            }
+ 
+            .input-style1 {
+                margin-right: 13px;
+                width:210px;
+                height: 48px;
+                color: gray;
+                border-color: lightgrey;
+                border-radius: 4px;
+                border-style: solid;
+                border-width: 1px;
+                
+            }
+ 
+ 
+ 
+            .right > .form > div > a {
+                clear: left;
+                font-size : 14px;
+                color: lightgrey;
+                text-decoration: none;
+            }
+ 
+            .right > .form > div > a:hover{
+                text-decoration: underline;
+            }
+ 
+            .right > .wrapper {
+                top:150px;
+                margin: 0 auto;
+                width: 350px;
+                height: 344px;
+            }
+ 
+            .right > .wrapper > img {
+                width:40px;
+                height: 40px;
+            }
+ 
+            .right > .wrapper > div:nth-child(2) {
+                font-size: 27px;
+                font-weight: bold;
+                 
+            }
+ 
+            .right > .wrapper > div:nth-child(3) {
+                margin: 16px 0px 48px 0px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+ 
+            button {
+                border-style: solid;
+                outline: none;
+                border-width: 1px;
+                font-weight: bold;
+            }
+
+            button:hover {
+                cursor:pointer;
+            }
+ 
+            .btn-size1 {
+                width: 64px;
+                height: 48px;
+                line-height: 48px;
+                border-radius : 24px;
+ 
+ 
+            }
+ 
+            .btn-size2 {
+                width : 316px;
+                height : 32px;
+                border-radius: 16px;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+ 
+            .btn-white {
+                background-color: white;
+                color: #1DA1F2;
+                border-color: #1DA1F2;
+            }
+ 
+            .btn-blue {
+                background-color: #1DA1F2;
+                color : white;
+                border-color: #1DA1F2;
+            }
+
+            .footer {
+                position: fixed;
+                z-index: 20;
+                bottom: 0px;
+                height: 45px;
+                width:100%;
+                background-color: white;
+                border : none;
+                border-top-color : #E6ECF0;
+                border-top-width: 1px;
+                
+                border-style: solid;
+
+            }
+
+            .footer > ul {
+                margin : 0px;
+                padding: 0px 100px;
+                list-style: none;
+                color : lightgrey;
+                font-size : 12px;
+                overflow: hidden;
+                line-height: 45px;
+            
+            }
+
+            .footer > ul > li {
+                float: left;
+                margin: 0 5px;
+            }
+
+            .footer > ul > li :hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        
+        
+        </style>
+ 
+ 
+    </head>
+    <body>
+        <div class="main">
+            <div class="left">
+                <div class="wrapper">
+                    <img class="img-background" src="http://pngimg.com/uploads/twitter/twitter_PNG3.png" alt="">
+ 
+                    <div><i class="fas fa-search fa-1.5x"></i>  관심사를 팔로우하세요.</div>
+                    <div><i class="fas fa-user-friends fa-1.5x"></i>  사람들이 이야기하고 있는 주제에 대해 알아보세요.</div>
+                    <div><i class="far fa-comment fa-1.5x"></i>  대화에 참여하세요.</div>
+ 
+                </div>  
+ 
+            </div>
+ 
+            <div class="right">
+                <div class="form">
+                    <div><input class="input-style1" type="text" placeholder="휴대폰 번호, 이메일 주소 또는"></div>
+                    <div><input class="input-style1" type="password" placeholder="비밀번호"></br><a href="#">비밀번호 찾기</a></a></div>
+                    <button class="btn-size1 btn-white">로그인</button>
+                </div>
+ 
+                <div class="wrapper">
+                    <img src="http://pngimg.com/uploads/twitter/twitter_PNG3.png" alt="">
+                    <div>지금 세계 곳곳에서 무슨 일이 일어나고 있는지 확인하세요.</div>
+                    <div>지금 트위터에 가입하세요.</div>
+ 
+                    <button class="btn-size2 btn-blue">가입하기</button>
+                    <button class="btn-size2 btn-white">로그인</button>
+                </div>
+ 
+            </div>
+ 
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><a>회사소개</a></li>
+                <li><a>고객센터</a></li>
+                <li><a>블로그</a></li>
+                <li><a>시스템 현황</a></li>
+                <li><a>인재채용</a></li>
+                <li><a>이용약관</a></li>
+                <li><a>개인정보 처리방침</a></li>
+                <li><a>쿠키</a></li>
+                <li><a>광고 정보</a></li>
+                <li><a>브랜드</a></li>
+                <li><a>애플리케이션</a></li>
+                <li><a>광고</a></li>
+                <li><a>마케팅</a></li>
+                <li><a>비즈니스</a></li>
+                <li><a>개발자</a></li>
+                <li><a>디렉토리</a></li>
+                <li><a>설정</a></li>
+                <li>© 2020 Twitter</li>
+
+            </ul>
+
+        </div>
+ 
+    </body>
+</html>
+
